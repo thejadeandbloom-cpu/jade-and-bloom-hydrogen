@@ -4,24 +4,21 @@
   "private": true,
   "version": "1.0.0",
   "description": "Jade and Bloom - Premium Indian Skincare Hydrogen Store",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
-    "dev": "hydrogen dev",
-    "build": "hydrogen build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-    "typecheck": "tsc --noEmit",
-    "deploy": "netlify deploy --prod"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@shopify/hydrogen": "^2024.1.0",
-    "@shopify/remix-oxygen": "^2.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remix": "^2.0.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.0.0",
-    "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "typescript": "^5.0.0",
@@ -29,9 +26,5 @@
     "tailwindcss": "^3.3.0",
     "postcss": "^8.4.0",
     "autoprefixer": "^10.4.0"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
   }
 }
